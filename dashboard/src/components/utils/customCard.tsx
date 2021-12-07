@@ -10,27 +10,32 @@ type CustomCardProps = {
   children?: React.ReactNode;
 };
 
+/**
+ * A custom card component that can be easly edited.
+ *
+ * @param title The title to be displayed on the top of the card. (optional, default none)
+ * @param subTitle The subtitle to be displayed on the top of the card. (optional, default none)
+ * @param backgroundColor The background color of the card. (optional, default 'bg-cardBackground')
+ * @param backgroundColorDark The background color of the card in dark mode. (optional, default 'bg-cardBackgroundDark')
+ * @param roundedCorners The rounded corners of the card. (optional, default 'rounded-md')
+ * @param className The className of the card. (optional)
+ * @param onClick The function to be called when the card is clicked. (optional, default none)
+ * @param padding The padding of the card. (optional, default 'p-3.5')
+ * @param children The children to be displayed within the card. (optional, default none)
+ */
+
 function CustomCard(props: CustomCardProps): JSX.Element {
-  const {
-    title,
-    subTitle,
-    backgroundColor = "bg-cardBackground",
-    backgroundColorDark = "dark:bg-cardBackgroundDark",
-    roundedCorners = "rounded-md",
-    padding = "p-3.5",
-    className,
-    onClick,
-    children,
-  } = props;
+  const { title, subTitle, onClick, children } = props;
 
   return (
     <div
       className={
-        className +
-        ` ${backgroundColor}` +
-        ` dark:${backgroundColorDark}` +
-        ` ${padding}` +
-        ` ${roundedCorners}` +
+        props.className +
+        ` ${props.backgroundColor ?? "bg-cardBackground"}` +
+        ` dark:${props.backgroundColorDark ?? "bg-cardBackgroundDark"}` +
+        ` ${props.padding ?? "p-3.5"}` +
+        ` ${props.roundedCorners ?? "rounded-md"}` +
+        ` ${onClick && "cursor-pointer"}` +
         " inline-block"
       }
       onClick={onClick}
