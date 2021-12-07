@@ -2,7 +2,15 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class",
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+    },
+    extend: {
+      colors: {
+        cardBackground: "#ffffff",
+        cardBackgroundDark: "#2b2a33",
+      },
+    },
   },
   variants: {
     extend: {},
