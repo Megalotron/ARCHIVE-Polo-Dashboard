@@ -6,6 +6,12 @@ type UserConnectedWidgetProps = {
   };
 };
 
+/**
+ * The UserConnectedWidget the number of user connected.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function UserConnectedWidget({ style }: UserConnectedWidgetProps): JSX.Element {
   return (
     <CustomCard

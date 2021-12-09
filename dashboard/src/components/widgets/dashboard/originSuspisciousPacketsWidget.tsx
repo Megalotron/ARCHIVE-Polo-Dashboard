@@ -6,6 +6,12 @@ type OriginSuspisciousPacketsWidgetProps = {
   };
 };
 
+/**
+ * The OriginSuspisciousPackets Widget to display the origin of suspiscious packets.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function OriginSuspisciousPacketsWidget({
   style,
 }: OriginSuspisciousPacketsWidgetProps): JSX.Element {

@@ -6,6 +6,12 @@ type NetworkSpeedWidgetProps = {
   };
 };
 
+/**
+ * The NetworkSpeedWidget widget to display the speed of the network.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function NetworkSpeedWidget({ style }: NetworkSpeedWidgetProps): JSX.Element {
   return (
     <CustomCard

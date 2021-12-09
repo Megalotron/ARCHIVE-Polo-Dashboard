@@ -6,6 +6,12 @@ type LastSuspisciousPackagesWidgetProps = {
   };
 };
 
+/**
+ * The LastSuspisciousPackagesWidget widget to the logs of the data.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function LastSuspisciousPackagesWidget({
   style,
 }: LastSuspisciousPackagesWidgetProps): JSX.Element {

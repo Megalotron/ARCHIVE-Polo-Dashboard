@@ -13,6 +13,12 @@ type DashboardLayoutProps = {
   };
 };
 
+/**
+ * The layout to be used to show the Dashboad page.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function DashboardLayout({ style }: DashboardLayoutProps): JSX.Element {
   return (
     <div

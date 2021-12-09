@@ -6,6 +6,12 @@ type HardwareStatusWidgetProps = {
   };
 };
 
+/**
+ * The HardwareStatusWidget widget to display the status of the hardware.
+ *
+ * @param style The style to be applied to the card. (optional, default none)
+ */
+
 function HardwareStatusWidget({
   style,
 }: HardwareStatusWidgetProps): JSX.Element {
