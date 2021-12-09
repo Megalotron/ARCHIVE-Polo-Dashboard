@@ -4,33 +4,35 @@ import Loading_icon from "../../assests/icon/loading.svg";
 import Check_icon from "../../assests/icon/check.svg";
 
 type TaskCardProps = {
-  className?: string;
   index?: number;
   title?: string;
   loading?: boolean;
+  style?: {
+    className?: string;
+  };
 };
 
 /**
  * A Task card component to display a task and it's status.
  *
- * @param className The className of the card. (optional, default none)
  * @param index The index of the task. (optional, default none)
  * @param title The title of the task. (optional, default none)
  * @param loading The loading status of the task. (optional, default none)
+ * @param stylre The style of the task card. (optional, default none)
  */
 
 function TaskCard({
-  className,
   index,
   title,
   loading,
+  style,
 }: TaskCardProps): JSX.Element {
   return (
     <CustomCard
       backgroundColor="bg-gray-200"
       roundedCorners="rounded-xl"
       padding="pl-2.5 pr-2"
-      className={className + " h-8"}
+      className={style?.className + " h-8"}
     >
       <div className="flex flex-row items-center justify-between w-full ">
         <p className="w-6 text-sm font-bold">{index}</p>
