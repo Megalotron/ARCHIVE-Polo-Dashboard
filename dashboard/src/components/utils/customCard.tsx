@@ -1,4 +1,5 @@
 type CustomCardProps = {
+  icon?: string;
   title?: string;
   subTitle?: string;
   backgroundColor?: string;
@@ -13,6 +14,7 @@ type CustomCardProps = {
 /**
  * A custom card component that can be easly edited.
  *
+ * @param icon - The icon to be displayed in the card.
  * @param title The title to be displayed on the top of the card. (optional, default none)
  * @param subTitle The subtitle to be displayed on the top of the card. (optional, default none)
  * @param backgroundColor The background color of the card. (optional, default 'bg-cardBackground')
@@ -25,7 +27,7 @@ type CustomCardProps = {
  */
 
 function CustomCard(props: CustomCardProps): JSX.Element {
-  const { title, subTitle, onClick, children } = props;
+  const { icon, title, subTitle, onClick, children } = props;
 
   return (
     <div
@@ -41,12 +43,15 @@ function CustomCard(props: CustomCardProps): JSX.Element {
       onClick={onClick}
     >
       <div className="flex flex-col w-full h-full">
-        {title && (
-          <div className="w-1/2">
-            <p className="text-sm font-bold leading-4 ">{title}</p>
-            {subTitle && <p className="text-sm leading-4">{subTitle}</p>}
-          </div>
-        )}
+        <div className="flex flex-row items-center">
+          {icon && <img src={icon} alt="icon" className="h-10 mr-3" />}
+          {title && (
+            <div className={icon ? "" : "w-1/2"}>
+              <p className="text-sm font-bold leading-4 ">{title}</p>
+              {subTitle && <p className="text-sm leading-4">{subTitle}</p>}
+            </div>
+          )}
+        </div>
         <div className="flex flex-col items-center justify-center w-full h-full">
           {children}
         </div>
