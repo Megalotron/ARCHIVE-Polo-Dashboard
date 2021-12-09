@@ -29,10 +29,12 @@ function TaskCard({
 }: TaskCardProps): JSX.Element {
   return (
     <CustomCard
-      backgroundColor="bg-gray-200"
-      roundedCorners="rounded-xl"
-      padding="pl-2.5 pr-2"
-      className={style?.className + " h-8"}
+      style={{
+        backgroundColor: "bg-gray-200",
+        roundedCorners: "rounded-xl",
+        padding: "pl-2.5 pr-2",
+        className: style?.className + " h-8",
+      }}
     >
       <div className="flex flex-row items-center justify-between w-full ">
         <p className="w-6 text-sm font-bold">{index}</p>
