@@ -14,7 +14,7 @@ type CustomCardProps = {
 /**
  * A custom card component that can be easly edited.
  *
- * @param icon - The icon to be displayed in the card.
+ * @param icon The icon to be displayed in the card. (optional, default none)
  * @param title The title to be displayed on the top of the card. (optional, default none)
  * @param subTitle The subtitle to be displayed on the top of the card. (optional, default none)
  * @param backgroundColor The background color of the card. (optional, default 'bg-cardBackground')
