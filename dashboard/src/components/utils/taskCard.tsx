@@ -19,9 +19,12 @@ type TaskCardProps = {
  * @param loading The loading status of the task. (optional, default none)
  */
 
-function TaskCard(props: TaskCardProps): JSX.Element {
-  const { className, index, title, loading } = props;
-
+function TaskCard({
+  className,
+  index,
+  title,
+  loading,
+}: TaskCardProps): JSX.Element {
   return (
     <CustomCard
       backgroundColor="bg-gray-200"
