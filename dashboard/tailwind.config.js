@@ -9,8 +9,6 @@ module.exports = {
       colors: {
         cardBackground: "#ffffff",
         cardBackgroundDark: "#2b2a33",
-        networkSpeedUpload: "#E1CFF3",
-        networkSpeedDownload: "#BFE1DF",
       },
     },
   },
