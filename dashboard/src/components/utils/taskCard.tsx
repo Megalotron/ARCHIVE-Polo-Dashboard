@@ -1,7 +1,6 @@
 import CustomCard from "./customCard";
 
-import Loading_icon from "../../assests/icon/loading.svg";
-import Check_icon from "../../assests/icon/check.svg";
+import { CheckIcon, LoadingIcon } from "../../assets/icon/icons";
 
 type TaskCardProps = {
   index?: number;
@@ -43,12 +42,12 @@ function TaskCard({
           {loading !== undefined &&
             (loading ? (
               <img
-                src={Loading_icon}
+                src={LoadingIcon}
                 alt="loading"
                 className="w-6 h-6 animate-spin"
               />
             ) : (
-              <img src={Check_icon} alt="loading" className="w-5 h-5" />
+              <img src={CheckIcon} alt="loading" className="w-5 h-5" />
             ))}
         </div>
       </div>
