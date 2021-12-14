@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 
 import CustomCard from "../../utils/customCard";
 
-import UploadIcon from "../../../assests/icon/upload.svg";
-import DownloadIcon from "../../../assests/icon/download.svg";
+import { UploadIcon, DownloadIcon } from "../../../assets/icon";
 
 import { NetworkStatus, getNetworkStatus } from "../../../utils/api/network";
 

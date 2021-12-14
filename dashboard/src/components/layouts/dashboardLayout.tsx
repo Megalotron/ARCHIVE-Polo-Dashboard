@@ -1,11 +1,4 @@
-import DashboardWidget from "../widgets/dashboard/dashboardWidget";
-import LastSuspisciousPackagesWidget from "../widgets/dashboard/lastSuspisciousPackagesWidget";
-import RulesWidget from "../widgets/dashboard/rulesWidget";
-
-import HardwareStatusWidget from "../widgets/dashboard/hardwareStatusWidget";
-import NetworkSpeedWidget from "../widgets/dashboard/networkSpeedWidget";
-import UserConnectedWidget from "../widgets/dashboard/userConnectedWidget";
-import OriginSuspisciousPacketsWidget from "../widgets/dashboard/originSuspisciousPacketsWidget";
+import { DashboardWidget, LastSuspisciousPackagesWidget, RulesWidget, HardwareStatusWidget, OriginSuspisciousPacketsWidget, UserConnectedWidget, NetworkSpeedWidget } from "../widgets/dashboard";
 
 type DashboardLayoutProps = {
   style?: {
@@ -14,7 +7,7 @@ type DashboardLayoutProps = {
 };
 
 /**
- * The layout to be used to show the Dashboad page.
+ * The layout to be used to show the Dashboard page.
  *
  * @param style The style to be applied to the card. (optional, default none)
  */
