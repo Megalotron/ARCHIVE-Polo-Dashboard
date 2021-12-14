@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 
 import CustomCard from "../../utils/customCard";
 
-import CpuIcon from "../../../assests/icon/cpu.svg";
-import RamIcon from "../../../assests/icon/ram.svg";
+import { CpuIcon, RamIcon } from "../../../assets/icon";
 
 import { HardwareStatus, getHardwareStatus } from "../../../utils/api/hardware";
 
@@ -32,11 +31,11 @@ function HardwareStatusWidget({
 
   useEffect(() => {
     updateHardwareStatus();
-    const updatehardwareStatusInterval = setInterval(
+    const updateHardwareStatusInterval = setInterval(
       updateHardwareStatus,
       5000
     );
-    return () => clearInterval(updatehardwareStatusInterval);
+    return () => clearInterval(updateHardwareStatusInterval);
   }, []);
 
   return (
