@@ -1,3 +1,5 @@
+import React from 'react';
+
 type CustomCardProps = {
   icon?: string;
   title?: string;
@@ -14,7 +16,7 @@ type CustomCardProps = {
 };
 
 /**
- * A custom card component that can be easly edited.
+ * A custom card component that can be easily edited.
  *
  * @param icon The icon to be displayed in the card. (optional, default none)
  * @param title The title to be displayed on the top of the card. (optional, default none)

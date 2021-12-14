@@ -1,6 +1,7 @@
 import CustomCard from "./customCard";
 
-import { CheckIcon, LoadingIcon } from "../../assets/icon/icons";
+import { CheckIcon, LoadingIcon } from "../../assets/icon";
+
 
 type TaskCardProps = {
   index?: number;
@@ -17,7 +18,7 @@ type TaskCardProps = {
  * @param index The index of the task. (optional, default none)
  * @param title The title of the task. (optional, default none)
  * @param loading The loading status of the task. (optional, default none)
- * @param stylre The style of the task card. (optional, default none)
+ * @param style The style of the task card. (optional, default none)
  */
 
 function TaskCard({
