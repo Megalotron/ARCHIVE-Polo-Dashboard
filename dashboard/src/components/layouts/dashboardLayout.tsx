@@ -1,4 +1,12 @@
-import { DashboardWidget, LastSuspisciousPackagesWidget, RulesWidget, HardwareStatusWidget, OriginSuspisciousPacketsWidget, UserConnectedWidget, NetworkSpeedWidget } from "../widgets/dashboard";
+import {
+  DashboardWidget,
+  LastSuspisciousPackagesWidget,
+  RulesWidget,
+  HardwareStatusWidget,
+  OriginSuspisciousPacketsWidget,
+  UserConnectedWidget,
+  NetworkSpeedWidget,
+} from "../widgets/dashboard";
 
 type DashboardLayoutProps = {
   style?: {
@@ -18,9 +26,9 @@ function DashboardLayout({ style }: DashboardLayoutProps): JSX.Element {
       className={style?.className + " flex flex-col w-full h-full space-y-3"}
     >
       <div className="flex flex-row justify-between flex-1 space-x-3">
-        <DashboardWidget style={{ className: "w-5/12" }} />
-        <RulesWidget style={{ className: "flex-auto" }} />
-        <LastSuspisciousPackagesWidget style={{ className: "flex-auto" }} />
+        <DashboardWidget style={{ className: "flex-1" }} />
+        <RulesWidget style={{ className: "w-3/12" }} />
+        <LastSuspisciousPackagesWidget style={{ className: "w-3/12" }} />
       </div>
       <div className="flex flex-row justify-between space-x-3 h-1/5">
         <HardwareStatusWidget style={{ className: "flex-1" }} />

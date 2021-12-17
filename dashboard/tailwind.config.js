@@ -9,8 +9,8 @@ module.exports = {
       colors: {
         cardBackground: "#ffffff",
         cardBackgroundDark: "#2b2a33",
-        hardwareStatusCPU: "#E1CFF3",
-        hardwareStatusRAM: "#BFE1DF",
+        hardwareStatusCPU: "#BFE1DF ",
+        hardwareStatusRAM: "#E1CFF3",
         usersStatus: "#44EC55",
         networkSpeedUpload: "#E1CFF3",
         networkSpeedDownload: "#BFE1DF",
